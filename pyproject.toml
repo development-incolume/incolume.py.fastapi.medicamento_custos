@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "medicamento-custos"
+name = "incolume.py.api.medicamento-custos"
 version = "0.2.0"
 description = ""
 authors = ["Britodfbr <britodfbr@gmail.com>"]
@@ -9,11 +9,13 @@ packages = [{include = "incolume"}]
 [tool.poetry.dependencies]
 python = "^3.11.0"
 
-
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 pytest = "^7.2.1"
 pytest-cov = "^4.0.0"
+taskipy = "^1.10.4"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
